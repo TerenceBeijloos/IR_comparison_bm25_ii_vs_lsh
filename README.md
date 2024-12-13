@@ -1,56 +1,28 @@
-# IR Group 18
+## Branches Overview
 
-## Setup Instructions
+This repository contains two key branches, each focused on distinct aspects of our information retrieval (IR) project:
 
-### Step 1: Create a Virtual Environment
-Create a virtual environment using your preferred method. For example:
-```bash
-python -m venv .venv
-```
+### `bm25_ii_vs_pyterrier`
 
-### Step 2: Install Requirements
-Activate your virtual environment and install the required dependencies:
-```bash
-pip install -r requirements.txt
-```
+This branch compares our custom IR system with PyTerrier. Our IR system implements the BM25 algorithm for ranking and evaluates performance using:
+- **Speed**: Query execution time.
+- **Memory Usage**: Resource consumption during indexing and retrieval.
+- **Accuracy**: Relevance of retrieved documents, measured by Normalized Discounted Cumulative Gain (NDCG).
 
-## Running the Code
+The comparison focuses exclusively on the Normal Inverted Index and its performance relative to PyTerrier.
 
-### Option 1: Inverted Index and BM25
-To run the inverted index and BM25 implementation, execute:
-```bash
-python ./collect_data.py
-```
+### `lsh`
 
-### Option 2: PyTerrier Version
-To run the PyTerrier-based implementation, execute:
-```bash
-python ./pyterrier_collect_data.py
-```
+This branch addresses data collection and preprocessing for the IR system using Locality-Sensitive Hashing (LSH). Key aspects include:
+- **Document Bucketing**: Grouping similar documents into buckets.
+- **Index Construction**: Building inverted indexes within buckets for efficient retrieval.
 
-### Problems
-It is possible that the existing ii.pickle does not work for your system, in that case delete it and run the code again.
+This branch highlights the scalability of LSH for handling large datasets.
 
-## Memory Profiling
+## Context and Insights
 
-### Enabling Profiling
-Uncomment all `@profile` decorators in the Python file you want to profile.
+This project explores indexing trade-offs in IR systems using the NFCorpus dataset. The report provides further details on experimental design, implementation, and evaluation.
 
-### Running the Profiler
-Run memory profiling with the following commands:
+---
 
-For `collect_data.py`:
-```bash
-mprof run --interval 1 --include-children collect_data.py
-```
-
-For `pyterrier_collect_data.py`:
-```bash
-mprof run --interval 1 --include-children pyterrier_collect_data.py
-```
-
-### Generating the Plot
-After running the profiler, generate the memory usage plot with:
-```bash
-mprof plot
-```
+For additional details, refer to the corresponding Python files and the project report.
