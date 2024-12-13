@@ -1,0 +1,16 @@
+         17280907 function calls in 15.015 seconds
+
+   Ordered by: cumulative time
+   List reduced from 14 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     2590    2.540    0.001   15.013    0.006 bm25.py:48(rank)
+  1984071    6.286    0.000    9.958    0.000 bm25.py:15(compute_score)
+     6464    1.241    0.000    1.513    0.000 bm25.py:40(concat)
+  1990984    0.867    0.000    1.387    0.000 <frozen _collections_abc>:778(__contains__)
+  1984071    1.074    0.000    1.074    0.000 {method 'get' of 'dict' objects}
+  3975055    0.960    0.000    0.960    0.000 lsh_index.py:35(__getitem__)
+     2590    0.476    0.000    0.659    0.000 {built-in method builtins.sorted}
+  1984071    0.537    0.000    0.537    0.000 {built-in method math.log}
+     2463    0.329    0.000    0.329    0.000 bm25.py:65(<listcomp>)
+  1984071    0.272    0.000    0.272    0.000 {method 'add' of 'set' objects}

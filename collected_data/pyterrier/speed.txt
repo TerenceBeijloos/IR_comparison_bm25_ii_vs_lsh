@@ -1,0 +1,13 @@
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     2590    0.044    0.000   18.107    0.007 transformer.py:202(search)
+5180/2590    0.025    0.000   13.924    0.005 utils.py:204(_wrapper)
+     2590    0.130    0.000   13.905    0.005 retriever.py:359(transform)
+     2590    0.025    0.000    5.845    0.002 frame.py:10813(merge)
+     2590    0.021    0.000    5.819    0.002 merge.py:135(merge)
+     2590    0.028    0.000    3.529    0.001 merge.py:882(get_result)
+     2590    0.043    0.000    3.195    0.001 frame.py:6997(sort_values)
+     5180    0.106    0.000    3.043    0.001 frame.py:694(__init__)
+     2590    2.458    0.001    2.739    0.001 retriever.py:268(_retrieve_one)
+    20720    0.115    0.000    2.345    0.000 frame.py:4062(__getitem__)
+
+Total time: 18.107

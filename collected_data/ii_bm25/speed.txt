@@ -1,0 +1,13 @@
+ ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     2590    1.497    0.001    8.687    0.003 bm25.py:41(rank)
+  1281899    4.433    0.000    6.341    0.000 bm25.py:14(compute_score)
+  1281899    0.548    0.000    0.884    0.000 <frozen _collections_abc>:771(get)
+  2577175    0.650    0.000    0.650    0.000 inverted_index.py:33(__getitem__)
+     2590    0.400    0.000    0.554    0.000 {built-in method builtins.sorted}
+  1281899    0.372    0.000    0.372    0.000 {built-in method math.log}
+     2463    0.280    0.000    0.280    0.000 bm25.py:60(<listcomp>)
+  1281899    0.179    0.000    0.179    0.000 {method 'get' of 'dict' objects}
+  1284489    0.168    0.000    0.168    0.000 {built-in method builtins.len}
+  1107304    0.153    0.000    0.153    0.000 bm25.py:54(<lambda>)
+
+total time: 8.687
