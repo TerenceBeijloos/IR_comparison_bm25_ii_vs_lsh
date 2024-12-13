@@ -16,7 +16,6 @@ pip install -r requirements.txt
 
 ## Running the Code
 
-### Option 1: Inverted Index and BM25
 To run the LSH inverted index and BM25 implementation, first create the LSH buckets:
 ```bash
 python ./lsh.py
@@ -24,12 +23,6 @@ python ./lsh.py
 Then, execute:
 ```bash
 python ./collect_data.py
-```
-
-### Option 2: PyTerrier Version
-To run the PyTerrier-based implementation, execute:
-```bash
-python ./pyterrier_collect_data.py
 ```
 
 ### Problems
@@ -46,11 +39,6 @@ Run memory profiling with the following commands:
 For `collect_data.py`:
 ```bash
 mprof run --interval 1 --include-children collect_data.py
-```
-
-For `pyterrier_collect_data.py`:
-```bash
-mprof run --interval 1 --include-children pyterrier_collect_data.py
 ```
 
 ### Generating the Plot
